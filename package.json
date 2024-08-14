@@ -1,0 +1,5 @@
+{
+    "scripts": {
+      "build": "node widget_Dribbble/build.js"
+    }
+  }

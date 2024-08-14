@@ -15,7 +15,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            const DRIBBBLE_API_TOKEN = process.env.DRIBBBLE_API_TOKEN;
+            const DRIBBBLE_API_TOKEN = '%DRIBBBLE_API_TOKEN%' ;
         
             fetch(`https://api.dribbble.com/v2/user/shots?access_token=${DRIBBBLE_API_TOKEN}`)
                 .then(response => {
