@@ -75,6 +75,7 @@
                 const projectElement = document.createElement("div");
                 projectElement.classList.add("project");
                 projectElement.innerHTML = `<img src="${project.images.hidpi || project.images.normal}" alt="${project.title}">`;
+                projectElement.addEventListener("click", () => {window.open(project.html_url, "_blank")});
                 projectsContainer.appendChild(projectElement);
               });
             } 
