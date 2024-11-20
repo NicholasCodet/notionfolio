@@ -10,6 +10,9 @@
     <style>
       * {
         background-color: transparent;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
       body {
@@ -21,23 +24,24 @@
       }
 
       .carousel-container {
-        overflow-x: scroll;
-        white-space: nowrap;
-        padding: 4px;
-        outline: none;
+        width: 100%;
+        overflow-x: auto;
+        padding: 20px;
       }
 
       .carousel {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: max-content;
       }
 
       .carousel img {
-        display: inline-block;
         width: auto;
-        height: 200px; /* Adjust heigh for desktop view */
-        aspect-ratio: 4/3; /*Square Ratio*/
+        height: 300px;
+        aspect-ratio: 4/3;
         border-radius: 8px;
-        margin: 4px;
+        object-fit: cover;
       }
 
       @media (max-width: 768px) {
